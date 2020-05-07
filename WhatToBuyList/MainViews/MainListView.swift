@@ -61,7 +61,7 @@ struct MainListView: View {
                 .first?.windows
                 .filter({$0.isKeyWindow}).first
             keyWindow!.endEditing(true)
-            
+        
         }
         .navigationBarTitle(Text("Ваш список:"))
         .navigationBarBackButtonHidden(true)

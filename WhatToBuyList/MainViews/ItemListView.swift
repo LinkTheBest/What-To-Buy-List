@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-
 struct ItemListView: View {
     var name: String = ""
     var category: String = ""

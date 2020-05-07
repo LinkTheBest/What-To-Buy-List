@@ -14,6 +14,7 @@ struct BoughtProductView: View {
             Text(" - Куплено!")
                 .foregroundColor(.green)
                 .font(.headline)
+                .animation(.spring())
         }
     }
 }

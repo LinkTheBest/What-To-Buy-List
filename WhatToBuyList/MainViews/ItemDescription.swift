@@ -8,7 +8,6 @@
 
 import SwiftUI
 import MapKit
-
 struct ItemDescription: View {
     
     var name: String

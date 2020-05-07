@@ -35,10 +35,6 @@ struct ContentView: View {
                         .foregroundColor(.green)
                         .frame(width: 45, height: 45)
                 }
-                //                .navigationBarHidden(self.isNavigationBarHidden)
-                //                .onAppear {
-                //                    self.isNavigationBarHidden = true
-                //                }
             }
         }
     }

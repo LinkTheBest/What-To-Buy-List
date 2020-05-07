@@ -17,7 +17,6 @@ struct ScrollViewElementModel: View {
     
     var body: some View {
         VStack(alignment: .leading){
-            
             HStack(){
                 CheckMarkView(isChecked: $isChecked)
                 if(isChecked){

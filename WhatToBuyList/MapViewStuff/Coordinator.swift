@@ -15,5 +15,4 @@ final class Coordinator: NSObject, MKMapViewDelegate{
     init(_ control: MapView){
         self.control = control
     }
-    
 }

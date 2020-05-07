@@ -37,6 +37,7 @@ struct CheckMarkView: View {
                             .frame(width:30 ,height:30 )
                             .foregroundColor(.black)
                             .padding()
+                        
                     }
                 }
             }

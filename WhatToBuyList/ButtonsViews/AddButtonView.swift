@@ -25,8 +25,7 @@ struct AddButtonView: View {
             Image(systemName: "rectangle")
                 .resizable()
                 .frame(width: 100, height: 55)
-                .foregroundColor(.black)
-
+                .foregroundColor(.black)                
                 .overlay(ImageOverlay().cornerRadius(6), alignment: .center)
         }
     }

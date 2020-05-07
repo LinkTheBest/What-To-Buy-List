@@ -5,7 +5,6 @@
 //  Created by Никита Попов on 06.02.2020.
 //  Copyright © 2020 Никита Попов. All rights reserved.
 //
-
 import CoreData
 import SwiftUI
 
