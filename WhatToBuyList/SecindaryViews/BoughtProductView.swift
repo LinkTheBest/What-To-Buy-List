@@ -11,10 +11,15 @@ import SwiftUI
 struct BoughtProductView: View {
     var body: some View {
         ZStack(alignment: .top){
-            Text(" - Куплено!")
+            Image(systemName: "rectangle.fill")
+                .resizable()
+                .frame(width: 90, height: 35)
                 .foregroundColor(.green)
-                .font(.headline)
-                .animation(.spring())
+                .shadow(radius: 4)
+                .cornerRadius(5)
+                .overlay(Text("Куплено!")
+                    .font(.subheadline)
+                    .animation(.spring()))
         }
     }
 }

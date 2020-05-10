@@ -21,6 +21,7 @@
 		F86F4AB523EAC321005315BA /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86F4AB423EAC321005315BA /* MainListView.swift */; };
 		F8724986246075840011C393 /* Landmarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8724985246075840011C393 /* Landmarks.swift */; };
 		F8724988246076410011C393 /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8724987246076410011C393 /* LandmarkAnnotation.swift */; };
+		F880F6BF246803EE00547E0E /* NearestPlacesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F880F6BE246803EE00547E0E /* NearestPlacesListView.swift */; };
 		F88E546624580D6D002CC0BF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E546524580D6D002CC0BF /* Coordinator.swift */; };
 		F88E546824580DE9002CC0BF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E546724580DE9002CC0BF /* MapView.swift */; };
 		F88E546D2458115B002CC0BF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88E546C2458115B002CC0BF /* LocationManager.swift */; };
@@ -35,7 +36,7 @@
 /* Begin PBXFileReference section */
 		F828E3AB23EC70AC00A43507 /* ElementProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementProperties.swift; sourceTree = "<group>"; };
 		F828E3AD23EC7BAD00A43507 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
-		F82C91A823E9B2F500152DC1 /* WhatToBuyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatToBuyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82C91A823E9B2F500152DC1 /* Slister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82C91AB23E9B2F500152DC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F82C91AD23E9B2F500152DC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F82C91B023E9B2F500152DC1 /* WhatToBuyList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WhatToBuyList.xcdatamodel; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		F86F4AB423EAC321005315BA /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 		F8724985246075840011C393 /* Landmarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmarks.swift; sourceTree = "<group>"; };
 		F8724987246076410011C393 /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
+		F880F6BE246803EE00547E0E /* NearestPlacesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearestPlacesListView.swift; sourceTree = "<group>"; };
 		F88E546524580D6D002CC0BF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F88E546724580DE9002CC0BF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F88E546C2458115B002CC0BF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 		F82C91A923E9B2F500152DC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F82C91A823E9B2F500152DC1 /* WhatToBuyList.app */,
+				F82C91A823E9B2F500152DC1 /* Slister.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +146,7 @@
 				F82D657323EBFC6F00C04839 /* ItemListView.swift */,
 				F838F31D245478CF00AE7424 /* ItemDescription.swift */,
 				F8C862B824644D350056D707 /* ScrollViewElementModel.swift */,
+				F880F6BE246803EE00547E0E /* NearestPlacesListView.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -191,7 +194,7 @@
 			);
 			name = WhatToBuyList;
 			productName = WhatToBuyList;
-			productReference = F82C91A823E9B2F500152DC1 /* WhatToBuyList.app */;
+			productReference = F82C91A823E9B2F500152DC1 /* Slister.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -257,6 +260,7 @@
 				F838F31E245478CF00AE7424 /* ItemDescription.swift in Sources */,
 				F82C91B323E9B2F500152DC1 /* ContentView.swift in Sources */,
 				F8724988246076410011C393 /* LandmarkAnnotation.swift in Sources */,
+				F880F6BF246803EE00547E0E /* NearestPlacesListView.swift in Sources */,
 				F82D657423EBFC6F00C04839 /* ItemListView.swift in Sources */,
 				F8C862BD246469370056D707 /* AddButtonView.swift in Sources */,
 				F88E546624580D6D002CC0BF /* Coordinator.swift in Sources */,
@@ -410,7 +414,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vk.lincharageniy.WhatToBuyList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Slister;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.vk.lincharageniy.WhatToBuyList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Slister;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

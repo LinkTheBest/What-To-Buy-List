@@ -34,8 +34,9 @@ struct MainListView: View {
             HStack(){
                 NavigationLink(destination: DeclarationView()){
                     Text("Добавить")
-                        .frame(width:80, height: 45)
+                        .frame(width:150, height: 45)
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue,lineWidth: 0.5))
+                    //AddButtonView()
                 }
                 .padding()
                 
@@ -46,7 +47,7 @@ struct MainListView: View {
                     self.mode.wrappedValue.dismiss()
                 }){
                     Text("Очистить")
-                        .frame(width:80, height: 45)
+                        .frame(width:150, height: 45)
                         .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue,lineWidth: 0.5))
                 }
                 .padding()
@@ -65,6 +66,7 @@ struct MainListView: View {
         }
         .navigationBarTitle(Text("Ваш список:"))
         .navigationBarBackButtonHidden(true)
+        
     }
 }
 

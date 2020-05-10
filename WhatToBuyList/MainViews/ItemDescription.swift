@@ -43,25 +43,35 @@ struct ItemDescription: View {
                 .clipped()
                 .edgesIgnoringSafeArea(.all)
                 .shadow(radius: 5)
-            
-            Button(action:{
-                self.isPressed.toggle()
-                if(self.isPressed){
-                    self.getLocalShops(category: self.category)
-                }else{
-                    self.landmarks.removeAll()
+            HStack(){
+                Button(action:{
+                    self.isPressed.toggle()
+                    if(self.isPressed){
+                        self.getLocalShops(category: self.category)
+                    }else{
+                        self.landmarks.removeAll()
+                    }
+                }){
+                    Image(systemName: isPressed ? "cart.fill.badge.minus": "cart.fill.badge.plus")
+                        .resizable()
+                        .foregroundColor(.blue)
+                        .frame(width: 45, height: 35)
                 }
-            }){
-                Image(systemName: isPressed ? "cart.fill.badge.minus": "cart.fill.badge.plus")
-                    .resizable()
-                    .foregroundColor(.blue)
-                    .frame(width: 55, height: 45)
+                .padding()
+                NavigationLink(destination: MapView(landmarks: landmarks).edgesIgnoringSafeArea(.all)){
+                    Image(systemName: "arrow.up.left.and.arrow.down.right")
+                        .resizable()
+                        .foregroundColor(.blue)
+                        .frame(width: 35, height: 35)
+                    
+                }
             }
             
             Divider()
-            VStack(alignment: .center){
+            VStack(alignment: .leading){
                 ItemListView(name: name, category: category)
-                Spacer()
+                Divider()
+                NearestPlacesListView(landmarks: landmarks)
             }
         }
     }

@@ -23,6 +23,7 @@ struct ScrollViewElementModel: View {
                     NavigationLink(destination: ItemDescription(name: name ?? "", category: category ?? "")){
                         ItemListView(name: name ?? "", category: category ?? "")
                     }
+                    Spacer()
                     BoughtProductView()
                         .animation(.spring())
                 }else{
