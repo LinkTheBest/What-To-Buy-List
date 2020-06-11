@@ -25,12 +25,9 @@ struct MainListView: View {
                         element in
                         ScrollViewElementModel(name: element.name!, category: element.category!)
                             .frame(width:UIScreen.main.bounds.size.width )
-                        
                     }
-                    
                 }
             }
-            
             HStack(){
                 NavigationLink(destination: DeclarationView()){
                     Text("Добавить")

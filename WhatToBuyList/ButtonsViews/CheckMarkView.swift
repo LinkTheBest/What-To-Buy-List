@@ -14,7 +14,6 @@ struct CheckMarkView: View {
     @Environment(\.colorScheme) var colorScheme
     
     func getCheckMarkState()->Bool{
-        print(isChecked)
         return isChecked
     }
     

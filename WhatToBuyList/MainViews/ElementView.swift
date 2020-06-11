@@ -13,7 +13,7 @@ struct DeclarationView: View {
     @Environment(\.managedObjectContext) var managedObjectContext
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     @FetchRequest(fetchRequest: ElementProperties.getAllElements()) var Elements: FetchedResults
-    private let categories = ["Продукты","Медикаменты"]
+    private let categories = ["Продукты","Аптека"]
     @State private var selectedCategory = 0
     @State var name:String = ""
     @State var category:String = ""

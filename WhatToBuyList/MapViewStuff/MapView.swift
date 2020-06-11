@@ -9,7 +9,7 @@ import SwiftUI
 import MapKit
 
 struct MapView: UIViewRepresentable {
-    
+
     let landmarks: [Landmark]
     let map = MKMapView()
     let locationManager = LocationManager()
@@ -36,6 +36,7 @@ struct MapView: UIViewRepresentable {
         let annotations = self.landmarks.map(LandmarkAnnotation.init)
         mapView.addAnnotations(annotations)
     }
+    
 }
 
 //struct MapView_Previews: PreviewProvider {

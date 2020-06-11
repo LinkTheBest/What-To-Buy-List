@@ -13,8 +13,9 @@ struct ItemDescription: View {
     var name: String
     var category: String
     let locationManager = LocationManager()
-    @State private var landmarks: [Landmark] = [Landmark]()
+    @State var landmarks: [Landmark] = [Landmark]()
     @State var isPressed = false
+    @State var isPressedSecond = false
     
     func getLocalShops(category: String){
         let searchRequest = MKLocalSearch.Request()
@@ -71,7 +72,33 @@ struct ItemDescription: View {
             VStack(alignment: .center){
                 ItemListView(name: name, category: category)
                 Divider()
-                NearestPlacesListView(landmarks: landmarks)
+                List(){
+                    ForEach(self.landmarks, id: \.id){ place in
+                        HStack(){
+                            Button(action:{
+                                self.isPressedSecond.toggle()
+                                if(self.isPressedSecond){
+                                    self.landmarks.removeAll()
+                                    self.landmarks = [place]
+                                }else{
+                                    self.getLocalShops(category: self.category)
+                                }
+                            }){
+                                Image(systemName: !self.isPressedSecond ? "plus.circle" : "minus.circle")
+                                    .resizable()
+                                    .frame(width:30 ,height:30 )
+                                    .padding()
+                            }
+                            VStack(alignment:.leading){
+                                Text(place.name)
+                                    .font(.headline)
+                                Text(place.title)
+                                    .font(.subheadline)
+                            }
+                            
+                        }
+                    }.animation(.linear)
+                }
             }
         }
     }
