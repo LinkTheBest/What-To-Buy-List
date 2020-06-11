@@ -22,23 +22,25 @@ struct ContentView: View {
     }
     var body: some View {
         NavigationView{
-            if(isEmpty){}else{MainListView()}
             VStack(){
-                Text("Начните добавлять что-то в свой список!")
-                    .font(.largeTitle)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                NavigationLink(destination: MainListView() ) {
-                    Image(systemName: "arrow.right.circle.fill")
-                        .resizable()
-                        .foregroundColor(.green)
-                        .frame(width: 45, height: 45)
+                if(!isEmpty){MainListView()}else{
+                    Text("Начните добавлять что-то в свой список!")
+                        .font(.largeTitle)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+                    
+                    NavigationLink(destination: MainListView() ) {
+                        Image(systemName: "arrow.right.circle.fill")
+                            .resizable()
+                            .foregroundColor(.green)
+                            .frame(width: 45, height: 45)
+                    }
                 }
             }
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

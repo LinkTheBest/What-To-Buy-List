@@ -68,7 +68,7 @@ struct ItemDescription: View {
             }
             
             Divider()
-            VStack(alignment: .leading){
+            VStack(alignment: .center){
                 ItemListView(name: name, category: category)
                 Divider()
                 NearestPlacesListView(landmarks: landmarks)
